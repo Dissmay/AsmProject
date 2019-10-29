@@ -244,15 +244,22 @@ img, svg{
 }
 
 .cases{
-
 	padding-bottom: 30px;
 	position:relative;
-
-
 	&__block{
 		display:flex;		
 		align-items:center; 
-		.shift-left(1.8);     
+
+		.shift-left(1.8);
+		.media(800px,{
+				.shift-left(0);
+			});
+		&_obertka{
+			width: 60%;
+			.media(800px,{
+				width: 100%;
+			});
+		}     
 	}
 	&__h{
 		
@@ -263,14 +270,56 @@ img, svg{
 		.media(1200px,{
 			font-size:12.5vw;
 			});
-
 	}
 	&__p{
-		text-align: center;
+		margin-bottom: 60px;
+		margin-left: 10px;
+	}
+
+	&__form{
+		
+	}
+	&__input{
+		.size(6);
+		border:none;
+		border-bottom: 1px solid black;
+		padding-left: 25px;
+		padding-bottom: 15px;
+		margin-top: 20px;
+		margin-left: 10px;
+		.media(400px,{
+				.size(12);
+			});
+
+	}
+	&__button{
+		display:block;
+		margin-top: 30px;
+		margin-left: auto;
+		margin-right: 15px;
+		.size(6);
+		height: 56px;
+		background-color: black;
+		border:none;
+		color:white;
+		font-weight:bold;
+		.media(400px,{
+				.size(12);
+			});
+
 	}
 
 	&__img{
-		
+		.shift-left(1);
+		width: 30%;
+		.media(800px,{
+			display:none;
+			});
+	}
+	&_flower{
+		.media(800px,{
+			display:none;
+			});
 	}
 }
 .ourClients{
