@@ -77,7 +77,7 @@ img, svg{
 	margin-bottom:10.66666vh;
 	&__header{
 		padding-top: 20px;
-		padding-bottom: 21.33333333333333vh;
+		padding-bottom: 5.33333333333333vh;
 		width: 100%;
 		.media(800px,{
 			padding-bottom:12vh;
@@ -389,6 +389,9 @@ img, svg{
 		justify-content:space-between;
 		list-style-type:none;
 		align-items:center;
+		.media(500px,{
+			justify-content:center;	
+			});
 	}
 	&__li{
 		.col();
@@ -396,6 +399,7 @@ img, svg{
 		margin-right: 30px;	
 		.media(500px,{
 			.size(8);
+			margin-right: 0px;	
 			});
 		align-self:center;
 	}
