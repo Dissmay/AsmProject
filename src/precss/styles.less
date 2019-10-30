@@ -353,7 +353,7 @@ img, svg{
 	}
 }
 .ourClients{
-	
+	height: 100vh;
 	margin-bottom: 13.33333333333333vh;
 	.media(1000px,{
 			margin-bottom: 0;
@@ -397,15 +397,26 @@ img, svg{
 		.col();
 		.size(3);
 		margin-right: 30px;	
+		margin-bottom: 15px;
+
 		.media(500px,{
 			.size(8);
 			margin-right: 0px;	
 			});
 		align-self:center;
 	}
+	&__img{
+		-webkit-filter: grayscale(100%);
+			-moz-filter: grayscale(100%);
+			-ms-filter: grayscale(100%);
+			-o-filter: grayscale(100%);
+			filter: grayscale(100%);
+			filter: gray;
+	}
 }
 .reviews{
 	overflow:hidden;
+	padding-top: 90px;
 	.media(900px,{
 			height: 80vh;
 			});
