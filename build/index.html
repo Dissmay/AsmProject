@@ -61,13 +61,7 @@
         <div class="cases__block_obertka">
           <h2 class="cases__h"> Кейсы. </h2>
           <p class="cases__p"> Заполните форму и мы отправим вам наше портфолио </p>
-          <form action="#" method="POST" class="cases__form">
-            <input type="text" class="cases__input" placeholder="ФИО">
-            <input type="text" class="cases__input" placeholder="Телефон">
-            <input type="text" class="cases__input" placeholder="Компания">
-            <input type="text" class="cases__input" placeholder="Email">
-            <button type="submit" class="cases__button">Получить кейсы</button>
-          </form>
+          <div class="cases__button">Получить кейсы</div>
         </div>
         <div class="cases__img">
           <img src="./img/caseOne.png" alt="">
@@ -81,7 +75,7 @@
       <h2 class="ourClients__h">Наши клиенты</h2>
       <ul class="ourClients__ul row">
         <li class="ourClients__li">
-          <img src="./img/logo1.png" alt="" class="ourClients__img">
+          <img src="./img/svg/KazTransOil.svg" alt="" class="ourClients__img">
         </li>
         <li class="ourClients__li">
           <img src="./img/logo2.png" alt="" class="ourClients__img">
@@ -103,6 +97,12 @@
         </li>
         <li class="ourClients__li">
           <img src="./img/logo8.png" alt="" class="ourClients__img">
+        </li>
+        <li class="ourClients__li">
+          <img src="./img/svg/KazMunayGas_logo.svg" alt="" class="ourClients__img">
+        </li>
+        <li class="ourClients__li">
+          <img src="./img/svg/1920px-Samruk_Kazyna_Logo.png" alt="" class="ourClients__img">
         </li>
       </ul>
     </section>
@@ -129,6 +129,20 @@
         <img src="./img/lastScreenCat.png" alt="">
       </div>
     </section>
+    <div class="modal-container d-n">
+      <div class="wrapper modal-container__main">
+        <button class="modal-container__closer">
+          <span class="visually-hidden">Closer</span>
+        </button>
+        <form action="#" method="POST" class="popap__form ">
+          <input type="text" class="popap__input" placeholder="ФИО" required>
+          <input type="text" class="popap__input" placeholder="Телефон" required>
+          <input type="text" class="popap__input" placeholder="Компания" required>
+          <input type="text" class="popap__input" placeholder="Email" required>
+          <button type="submit" class="popap__button">Получить кейсы</button>
+        </form>
+      </div>
+    </div>
     <script src="./js/jquery.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="./js/js.js"></script>
