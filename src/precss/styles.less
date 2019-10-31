@@ -359,7 +359,7 @@ img, svg{
 	&__h{
 		text-align: center;
 		
-		margin-bottom: 6.666666666666667vh;
+		margin-bottom: 190px;
 		.media(1920px,{
 			font-size:7.812vw;
 			});
@@ -367,35 +367,26 @@ img, svg{
 		.media(1200px,{
 			font-size:12.5vw;
 			});
+		.media(600px,{
+			margin-bottom: 90px;
+			});
 	}
 	&__ul{
-		display:flex;
-		justify-content:space-between;
-		list-style-type:none;
-		align-items:center;
-		.media(500px,{
-			justify-content:center;	
+		height: 150px;
+		.media(600px,{
+			height: 100px;
 			});
+		
 	}
 	&__li{
-		.col();
-		.size(3);
-		margin-right: 30px;	
-		margin-bottom: 15px;
-
-		.media(500px,{
-			.size(8);
-			margin-right: 0px;	
-			});
-		align-self:center;
+		
+		
 	}
 	&__img{
-		-webkit-filter: grayscale(100%);
-			-moz-filter: grayscale(100%);
-			-ms-filter: grayscale(100%);
-			-o-filter: grayscale(100%);
-			filter: grayscale(100%);
-			filter: gray;
+	
+			height: 50px;
+			margin: 0 auto;
+
 	}
 }
 .reviews{
@@ -617,3 +608,4 @@ img, svg{
 			});
 
 	}
+

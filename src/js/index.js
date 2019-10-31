@@ -21,6 +21,29 @@ $(function(){
   ]
 });
 
+
+ $('.ourClients__ul').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+   responsive: [
+    {
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 2,
+      },      
+    },
+    {
+      breakpoint: 500,
+      settings: {
+        slidesToShow: 1,
+      },      
+    }
+  ]
+});
+
+
 var btnCase = document.querySelector('.cases__button');
 var modalContainer = document.querySelector('.modal-container');
 var closerModalContainer = document.querySelector('.modal-container__closer');
