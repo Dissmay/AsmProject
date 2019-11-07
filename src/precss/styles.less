@@ -234,7 +234,8 @@ img, svg{
 			.shift-left(0.5);
 			.media(675px,{
 				width: 80%;
-				.shift-left(0);		
+				.shift-left(0);
+				margin-left: 0;		
 			});
 
 		}
@@ -262,6 +263,8 @@ img, svg{
 	position:relative;
 	.media(800px,{
 				.shift-left(0);
+				margin-left: 0;
+
 			});
 	.media(414px,{
 				height: 50vh;
@@ -280,6 +283,7 @@ img, svg{
 		.shift-left(1.8);
 		.media(800px,{
 				.shift-left(0);
+				margin-left: 0;
 			});
 		&_obertka{
 			
@@ -534,6 +538,7 @@ img, svg{
 			height:20px;
 			background-color:transparent;
 			border:none;
+			cursor: pointer;
 
 			&:before, &:after{
 				content: '';
@@ -592,14 +597,16 @@ img, svg{
 		border-bottom: 1px solid black;
 		padding-left: 25px;
 		padding-bottom: 15px;
-		margin-top: 20px;
+		margin-top: 25px;
 		margin-left: 10px;
-		.media(400px,{
+		margin-right: 10px;
+		.media(580px,{
 				.size(12);
 			});
 
 	}
 	.popap__button{
+
 		display:block;
 		margin-top: 30px;
 		margin-left: auto;
@@ -610,6 +617,15 @@ img, svg{
 		border:none;
 		color:white;
 		font-weight:bold;
+		.media(600px,{
+				.size(7);
+				
+			});
+		.media(500px,{
+				.size(12);
+				margin-left: auto;
+				margin-right: auto;
+			});
 		.media(400px,{
 				.size(12);
 			});
